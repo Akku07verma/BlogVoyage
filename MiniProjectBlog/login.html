@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login</title>
+    <title>Blog Voyage || Login</title>
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="login.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Barrio&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <nav>
         <div class="items">
@@ -23,23 +26,22 @@
             <img src="assets/logo.png" alt="Logo">
         </div>
         <div class="buttons">
-            <button>sign up</button>
+            <button id="signup">Sign up</button>
         </div>
     </nav>
     <div class="login">
         <h1>Login</h1>
-            <input type="text" placeholder="Enter your name"><br>
-      
-        
-            <input type="password" placeholder="Enter Password" ><br>
-        
-        
-            <input type="text" placeholder="Enter Captcha" ><br>
-        
-        <!-- <input type="text" captcha> -->
-<div class="sbutton">
-    <button>log In</button>
-</div>
+        <input type="text" placeholder="Enter your name"><br>
+        <input type="password" placeholder="Enter Password"><br>
+        <input type="text" placeholder="Enter Captcha"><br>
+        <div class="captcha"></div>
+        <div class="captchaProtector"></div>
+        <div class="sbutton">
+            <button>Log In</button>
+        </div>
     </div>
+    <script src="script.js"></script>
+    <script src="captcha.js"></script>
 </body>
+
 </html>

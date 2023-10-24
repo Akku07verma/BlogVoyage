@@ -14,11 +14,17 @@ nav {
     justify-content: space-around;
     align-items: center;
     border-bottom: 1px solid white;
+    animation: slideFromTop 0.5s ease-in-out;
 }
 
 ul {
     display: flex;
 }
+
+ul li a:hover{
+    color: #2538e7;
+}
+
 
 ul li a {
     margin: 0 2.5vw;
@@ -36,6 +42,7 @@ ul li a {
 
 .logo img {
     width: 80px;
+    cursor: pointer;
 }
 
 button {
@@ -54,6 +61,12 @@ button:last-child {
     outline: 1px solid #2538e7;
     color: #2538e7;
     background-color: #00112B;
+}
+
+button:first-child:hover{
+    color: #2538e7;
+    background-color: #00112B;
+    outline: 1px solid #2538e7;
 }
 
 .main {
@@ -76,6 +89,7 @@ button:last-child {
     font-family: 'Kavoon';
     font-size: 4rem;
     letter-spacing: 3px;
+    animation: headingHighlighter 2s ease-in-out infinite;
 }
 
 button:last-child:hover {
@@ -167,4 +181,27 @@ hr {
     font-size: 2rem;
     color: #2538E7;
     justify-content: center;
+}
+
+@keyframes headingHighlighter {
+    0%{
+        filter: drop-shadow(8px 8px 20px blue);
+    }
+    33.33%{
+        filter: drop-shadow(-8px -8px 20px blue);
+    }
+    100%{
+        filter: drop-shadow(8px 8px 20px blue);
+    }
+}
+
+@keyframes slideFromTop {
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
 }

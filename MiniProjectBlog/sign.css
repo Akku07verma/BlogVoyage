@@ -14,7 +14,11 @@ nav {
     justify-content: space-around;
     align-items: center;
     border-bottom: 1px solid white;
+    animation: slideFromTop 0.8s ease-in-out;
+}
 
+ul li a:hover {
+    color: #2538e7;
 }
 
 ul {
@@ -35,10 +39,12 @@ ul li a {
     color: white;
 }
 
-.logo img{
+.logo img {
     width: 80px;
+    cursor: pointer;
 }
-button{
+
+button {
     margin: 0 15px;
     cursor: pointer;
     width: 9vw;
@@ -49,9 +55,16 @@ button{
     font-weight: 900;
     font-size: 1rem;
 }
-.sign{
+
+.sign {
+    padding: 20px 50px;
+    background-color: #000b1c70;
+    border-radius: 50px;
     align-content: center;
-    margin: 10vh auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -40%);
     font-family: 'JetBrains Mono', monospace;
     text-align: center;
     display: flex;
@@ -59,18 +72,49 @@ button{
     justify-content: center;
     align-items: center;
     width: 30%;
+    animation: expand 0.8s ease-in-out;
 }
-input{
+
+.sign h1 {
+    margin-bottom: 20px;
+}
+
+input {
     width: 100%;
     border-radius: 15px;
+    font-size: 1rem;
     text-align: center;
     background-color: #00112A;
     border-left: 2px solid white;
     border-bottom: 2px solid white;
     padding: 8px;
-    margin: 10px;
+    margin: 5px 0;
 }
-.sbutton{
-    margin: 60px;
-    margin-left:15%;
+
+.sbutton {
+    margin: 20px 0;
+}
+
+
+
+@keyframes slideFromTop {
+    0% {
+        margin-top: -100px;
+        opacity: 0;
+    }
+
+    100% {
+        margin-top: 0px;
+        opacity: 1;
+    }
+}
+
+@keyframes expand {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
