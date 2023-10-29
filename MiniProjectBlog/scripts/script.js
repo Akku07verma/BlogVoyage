@@ -1,10 +1,3 @@
-// const student={
-//     name:"akku",
-//     age:"20",
-//     marks:94,
-// }
-
-
 const logo = document.querySelector(".logo")
 const btnLogin = document.querySelector("#login")
 const btnSignUp = document.querySelector("#signup")
@@ -15,13 +8,13 @@ logo.addEventListener('click', ()=>{
 
 try{
     btnSignUp.addEventListener('click', () => {
-        window.location.href = "sign.html"
+        window.location.href = "/signup"
     })
 }
 catch(e){null}
 try{
     btnLogin.addEventListener('click', () => {
-        window.location.href = "login.html"
+        window.location.href = "/login"
     })
 }
 catch(e){null}
